@@ -1,0 +1,35 @@
+.navbar {
+	height: 10rem;
+	background-color: $color-black;
+	padding-right: 2rem;
+	&__item {
+		&--logo {
+			padding-left: 2rem;
+		}
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&--links {
+			& ul {
+				height: 10rem;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				@include reset-list;
+				& a {
+					padding: 2rem;
+					@include reset-links;
+					& li {
+						@include ease;
+						font-size: $font-size-2;
+						font-weight: 600;
+						&:hover {
+							@include hover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
